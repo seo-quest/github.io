@@ -4,6 +4,7 @@ import { Button } from "@material-ui/core";
 
 function Quest1() {
   const [selectedDate, handleDateChange] = useState(new Date());
+  const handleConfirm = () => {};
   return (
     <>
       <div>
@@ -16,7 +17,7 @@ function Quest1() {
         format="yyyy/MM/dd"
       />
       <p>
-        <Button>확인하기</Button>
+        <Button onClick={handleConfirm}>확인하기</Button>
       </p>
     </>
   );
