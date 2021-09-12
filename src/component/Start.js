@@ -5,15 +5,15 @@ import { useHistory } from "react-router-dom";
 function Start() {
   const history = useHistory();
   const handleStartBtn = () => {
-    history.push("/Quest1");
+    history.push("/Mission/01");
   };
 
   return (
-    <div class="main">
-      <p>앞으로 이 문제를 풀 때까지 연락을 할 수 없습니다.</p>
-      <p>게임을 시작 하시겠습니까?</p>
+    <div className="main">
+      <p>지금부터 문제를 다 풀기 전까지는 저와 연락을 할 수가 없습니다.</p>
+      <p>다음의 문제를 풀고 순서에 따라 진행해 주세요.</p>
       <Button color="primary" onClick={handleStartBtn}>
-        Start
+        시작하기
       </Button>
     </div>
   );
