@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { DatePicker } from "@material-ui/pickers";
+import { KeyboardDatePicker } from "@material-ui/pickers";
+import { Button } from "@material-ui/core";
 
 function Quest1() {
   const [selectedDate, handleDateChange] = useState(new Date());
@@ -9,9 +9,15 @@ function Quest1() {
       <div>
         <button>이전 단계로</button>
       </div>
-      <DatePicker value={selectedDate} onChange={handleDateChange} />
-
-      <div>날짜를 고르시오.</div>
+      <div>우리는 언제 처음 만났을까요?</div>
+      <KeyboardDatePicker
+        value={selectedDate}
+        onChange={handleDateChange}
+        format="yyyy/MM/dd"
+      />
+      <p>
+        <Button>확인하기</Button>
+      </p>
     </>
   );
 }
