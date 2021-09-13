@@ -13,6 +13,8 @@ import Question_02 from "./component/Question_02";
 import Result_wrong_02 from "./component/Result_wrong_02";
 import Mission_03 from "./component/Mission_03";
 import Question_03 from "./component/Question_03";
+import Result_wrong_03 from "./component/Result_wrong_03";
+import Mission_04 from "./component/Mission_04";
 
 function App() {
   return (
@@ -23,11 +25,13 @@ function App() {
           <Route exact path="/Mission/01" component={Mission_01} />
           <Route exact path="/Mission/02" component={Mission_02} />
           <Route exact path="/Mission/03" component={Mission_03} />
+          <Route exact path="/Mission/04" component={Mission_04} />
           <Route exact path="/Question/01" component={Question_01} />
           <Route exact path="/Question/02" component={Question_02} />
           <Route exact path="/Question/03" component={Question_03} />
           <Route exact path="/Result/wrong/01" component={Result_wrong_01} />
           <Route exact path="/Result/wrong/02" component={Result_wrong_02} />
+          <Route exact path="/Result/wrong/03" component={Result_wrong_03} />
         </HashRouter>
       </div>
     </MuiPickersUtilsProvider>

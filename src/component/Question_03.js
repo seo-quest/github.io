@@ -8,12 +8,12 @@ function Question_03() {
   const history = useHistory();
   const [value, setValue] = React.useState("");
 
-  const handleConfirm = (e) => {
+  const handleConfirm = () => {
     console.dir(value);
     if (value === QUEST_ANSWER) {
-      history.push("/Mission/03");
+      history.push("/Mission/04");
     } else {
-      history.push("/result/wrong/02");
+      history.push("/result/wrong/03");
     }
   };
 
