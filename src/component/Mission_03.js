@@ -2,31 +2,26 @@ import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-function Mission_02() {
+function Mission_03() {
   const history = useHistory();
   const handleNext = () => {
-    history.push("/Question/02");
+    history.push("/Question/03");
   };
 
   return (
     <div className="mission">
       <h1 className="mission-title">미션 :</h1>
-      <h2 className="mission-description">
-        그 곳에서 2번쨰로 가까운 백화점은 어디일까요?
-      </h2>
+      <h2 className="mission-description">물품 보관함 번호는 AA-123 입니다.</h2>
       <div className="mission-list-label">
-        해당 백화점 2층 A 물품 보관함으로 가주세요.
-      </div>
-      <div className="image-container">
-        <img className="image" src="/cabinet_sample.png" alt="물품보관함" />
+        이전 문제의 정답을 비밀번호로 하여 보관함을 열어보세요!
       </div>
       <div className="button-container">
         <Button variant="contained" color="primary" onClick={handleNext}>
-          보관함 앞에 도착했어요!
+          보관함을 열었습니다!
         </Button>
       </div>
     </div>
   );
 }
 
-export default Mission_02;
+export default Mission_03;
