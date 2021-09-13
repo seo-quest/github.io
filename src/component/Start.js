@@ -9,12 +9,20 @@ function Start() {
   };
 
   return (
-    <div className="main">
-      <p>지금부터 문제를 다 풀기 전까지는 저와 연락을 할 수가 없습니다.</p>
-      <p>다음의 문제를 풀고 순서에 따라 진행해 주세요.</p>
-      <Button color="primary" onClick={handleStartBtn}>
-        시작하기
-      </Button>
+    <div className="start">
+      <p className="description">
+        지금부터 문제를 다 풀기 전까지는
+        <br /> 저와 연락을 할 수가 없습니다.
+      </p>
+      <p className="description">
+        다음의 문제를 풀고
+        <br /> 순서에 따라 진행해 주세요.
+      </p>
+      <p className="button-container">
+        <Button variant="contained" color="primary" onClick={handleStartBtn}>
+          시작하기
+        </Button>
+      </p>
     </div>
   );
 }
