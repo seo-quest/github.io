@@ -2,24 +2,27 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-function Mission_04() {
+function Mission_08() {
   const history = useHistory();
   const handleNext = () => {
-    history.push("/Mission/05");
+    history.push("/Finish");
   };
 
   return (
     <div className="mission">
       <h1 className="mission-title">미션 :</h1>
-      <h2 className="mission-description">이 카드로 맘에 드는 예쁜 옷 사요 </h2>
-      <div className="mission-list-label">단, 시간은 16:30 까지</div>
+      <h2 className="mission-description">남산타워로 와주세요.</h2>
+      <div className="mission-list-label">
+        아래 지도에 표시된 위치에서 버스를 타고,
+        <br /> '남산타워 정류장' 에서 내려(3정거장) 남산타워까지 와주세요.
+      </div>
       <div className="button-container">
         <Button variant="contained" color="primary" onClick={handleNext}>
-          옷을 구매했습니다.
+          남산타워 앞이에요.
         </Button>
       </div>
     </div>
   );
 }
 
-export default Mission_04;
+export default Mission_08;
