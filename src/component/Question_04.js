@@ -32,7 +32,7 @@ function Question_04() {
           id="travelDate"
           label="출발 날짜를 입력해 주세요.(4자리)"
           defaultValue=""
-          helperText="힌트 : 09월 14일 -> 0914"
+          helperText="예시> 09월 14일 -> 0914"
           variant="outlined"
           onChange={handleChange}
         />
