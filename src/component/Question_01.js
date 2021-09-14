@@ -2,7 +2,7 @@ import React from "react";
 import { Button, TextField } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-const QUEST_ANSWER = "수원역 파리바게뜨";
+const QUEST_ANSWER = "파리바게뜨";
 
 function Question_01() {
   const history = useHistory();
@@ -26,7 +26,7 @@ function Question_01() {
       <h1 className="mission-title">문제: </h1>
       <h2 className="mission-description">
         우리가 처음 만난곳은
-        <br /> 어디일까요? (4점)
+        <br /> 어디일까요?
       </h2>
       <div className="text-input-container">
         <TextField
@@ -34,7 +34,7 @@ function Question_01() {
           id="firstMettingPlace"
           label="장소를 입력 해 주세요"
           defaultValue=""
-          helperText="힌트 : 000 00000"
+          helperText="힌트 : 수원역 00000"
           variant="outlined"
           onChange={handleChange}
         />

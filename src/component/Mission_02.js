@@ -12,9 +12,9 @@ function Mission_02() {
     <div className="mission">
       <h1 className="mission-title">미션 :</h1>
       <h2 className="mission-description">
-        그 곳에서 2번쨰로 가까운 백화점은 어디일까요?
+        그 곳에서 2번째로 가까운 백화점은 어디일까요?
       </h2>
-      <div className="mission-list-label">
+      <div className="mission-text">
         해당 백화점 2층 A 물품 보관함으로 가주세요.
       </div>
       <div className="image-container">

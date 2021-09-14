@@ -1,4 +1,4 @@
-import { Route, HashRouter } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
@@ -26,7 +26,6 @@ import Question_06 from "./component/Question_06";
 import Result_wrong_06 from "./component/Result_wrong_06";
 import Mission_08 from "./component/Mission_08";
 import Mission_09 from "./component/Mission_09";
-import Mission_10 from "./component/Mission_10";
 import Finish from "./component/Finish";
 
 function App() {
@@ -44,7 +43,6 @@ function App() {
           <Route exact path="/Mission/07" component={Mission_07} />
           <Route exact path="/Mission/08" component={Mission_08} />
           <Route exact path="/Mission/09" component={Mission_09} />
-          <Route exact path="/Mission/10" component={Mission_10} />
           <Route exact path="/Finish" component={Finish} />
           <Route exact path="/Question/01" component={Question_01} />
           <Route exact path="/Question/02" component={Question_02} />

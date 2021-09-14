@@ -12,7 +12,7 @@ function Mission_03() {
     <div className="mission">
       <h1 className="mission-title">미션 :</h1>
       <h2 className="mission-description">물품 보관함 번호는 AA-123 입니다.</h2>
-      <div className="mission-list-label">
+      <div className="mission-text">
         이전 문제의 정답을 비밀번호로 하여 보관함을 열어보세요!
       </div>
       <div className="button-container">

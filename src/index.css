@@ -18,7 +18,7 @@ body {
 }
 
 .button-container {
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -45,9 +45,11 @@ body {
   font-weight: bold;
 }
 
-.mission .mission-list-label {
+.mission .mission-text {
+  display: inline-block;
   padding-top:5px;
   font-weight: bold;
+  vertical-align: middle;
 }
 .mission .todo-list {
   padding-bottom: 20px;
@@ -69,5 +71,25 @@ body {
 
 .answer-input {
   width: 100%;
+}
+
+.answer h1.wrong{
+  padding-top: 30px;
+  vertical-align: center;
+  font-size: 20pt;
+  color: darkred;
+}
+
+.answer .error-desc{
+  margin-top: 30px;
+}
+
+.hint-title {
+  padding-top:30px;
+}
+
+.hint-content {
+  padding-top:10px;
+  font-style: italic;
 }
 

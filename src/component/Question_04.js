@@ -25,12 +25,12 @@ function Question_04() {
     <div className="mission">
       <h1 className="mission-title">문제: </h1>
       <h2 className="mission-description">
-        우리가 지금까지 갔던 여행지중 최고의 여행지 출발 날짜를 입력해 주세요.
+        우리가 지금까지 갔던 여행지 중 최고의 여행지 출발 날짜를 입력해 주세요.
       </h2>
       <div className="text-input-container">
         <TextField
           className="answer-input"
-          id="travleDate"
+          id="travelDate"
           label="출발 날짜를 입력해 주세요.(4자리)"
           defaultValue=""
           helperText="힌트 : 09월 14일 -> 0914"

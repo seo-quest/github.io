@@ -12,7 +12,7 @@ function Mission_05() {
     <div className="mission">
       <h1 className="mission-title">미션 :</h1>
       <h2 className="mission-description">옷 예쁘게 입었나요? </h2>
-      <div className="mission-list-label">
+      <div className="mission-text">
         수플레 팬케이크가 제일 맛있었던 가게가 있는 역으로 가주세요.
       </div>
       <h2 className="hint-title">TIP</h2>
@@ -21,7 +21,7 @@ function Mission_05() {
         <li>> 기차표를 예약해 두었어요.(3호차 45번)</li>
       </ul>
       <h2 className="hint-title">HINT</h2>
-      <div>샤로수</div>
+      <div className="hint-content">- 샤로수</div>
       <div className="button-container">
         <Button variant="contained" color="primary" onClick={handleNext}>
           도착 했습니다.

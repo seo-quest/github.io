@@ -12,10 +12,9 @@ function Mission_07() {
     <div className="mission">
       <h1 className="mission-title">미션 :</h1>
       <h2 className="mission-description">동대입구역으로 오세요.</h2>
-      <div className="mission-list-label">
+      <div className="mission-text">
         압구정 로데오역 7번출구 앞 버스 정류장에서 301번을 타고,
-        <br />
-        동대입구역으로 오세요
+        <span style={{ color: "red" }}>동대입구역</span>으로 오세요
       </div>
       <div className="button-container">
         <Button variant="contained" color="primary" onClick={handleNext}>
