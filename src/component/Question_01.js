@@ -9,7 +9,6 @@ function Question_01() {
   const [value, setValue] = React.useState("");
 
   const handleConfirm = () => {
-    console.dir(value);
     if (value === QUEST_ANSWER) {
       history.push("/Mission/02");
     } else {

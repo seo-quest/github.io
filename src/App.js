@@ -1,9 +1,9 @@
-import { HashRouter, Route } from "react-router-dom";
+import { Route, Switch, useHistory, useLocation } from "react-router-dom";
 import "./App.css";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Start from "./component/Start";
 import Mission_01 from "./component/Mission_01";
 import Question_01 from "./component/Question_01";
@@ -29,10 +29,41 @@ import Mission_09 from "./component/Mission_09";
 import Finish from "./component/Finish";
 
 function App() {
+  let location = useLocation();
+  const history = useHistory();
+  const isFirst = useRef(true);
+
+  useEffect(() => {
+    const lastUrl = localStorage.getItem("seoQuest");
+
+    if (isFirst.current && lastUrl) {
+      console.dir(isFirst);
+      console.dir(lastUrl);
+      isFirst.current = false;
+      if (
+        window.confirm("진행 중인 퀘스트가 있습니다. 이어서 진행하시겠습니까?")
+      ) {
+        history.push(lastUrl);
+      } else {
+        localStorage.removeItem("seoQuest");
+        history.push("/");
+      }
+    } else {
+      isFirst.current = false;
+      if (
+        location.pathname.includes("Question") ||
+        location.pathname.includes("Mission")
+      ) {
+        console.dir("save!");
+        localStorage.setItem("seoQuest", location.pathname);
+      }
+    }
+  }, [location]);
+
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
       <div className="container">
-        <HashRouter>
+        <Switch>
           <Route exact path="/" component={Start} />
           <Route exact path="/Mission/01" component={Mission_01} />
           <Route exact path="/Mission/02" component={Mission_02} />
@@ -56,7 +87,7 @@ function App() {
           <Route exact path="/Result/wrong/04" component={Result_wrong_04} />
           <Route exact path="/Result/wrong/05" component={Result_wrong_05} />
           <Route exact path="/Result/wrong/06" component={Result_wrong_06} />
-        </HashRouter>
+        </Switch>
       </div>
     </MuiPickersUtilsProvider>
   );

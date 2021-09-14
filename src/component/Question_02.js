@@ -8,8 +8,7 @@ function Question_02() {
   const history = useHistory();
   const [value, setValue] = React.useState("");
 
-  const handleConfirm = (e) => {
-    console.dir(value);
+  const handleConfirm = () => {
     if (value === QUEST_ANSWER) {
       history.push("/Mission/03");
     } else {
@@ -33,7 +32,7 @@ function Question_02() {
           id="firstDate"
           label="6자리로 입력해 주세요."
           defaultValue=""
-          helperText="힌트 : 2021년 09월 14일 -> 210914"
+          helperText="예시> 2021년 09월 14일 -> 210914"
           variant="outlined"
           onChange={handleChange}
         />
