@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-function Mission_08() {
+function Mission_10() {
   const history = useHistory();
   const handleNext = () => {
     history.push("/Finish");
@@ -25,4 +25,4 @@ function Mission_08() {
   );
 }
 
-export default Mission_08;
+export default Mission_10;

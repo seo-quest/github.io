@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 function Mission_09() {
   const history = useHistory();
   const handleNext = () => {
-    history.push("/Question/10");
+    history.push("/Mission/10");
   };
 
   return (
