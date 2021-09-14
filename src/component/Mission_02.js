@@ -13,9 +13,10 @@ function Mission_02() {
   useEffect(() => {
     axios
       .get(
-        "https://raw.githubusercontent.com/seo-quest/seo-quest.github.io/master/userData.json"
+        `https://raw.githubusercontent.com/seo-quest/seo-quest.github.io/master/userData.json?timestamp=${new Date().getTime()}`
       )
       .then((resp) => {
+        console.dir(resp.data);
         setCabinetId(resp.data.cabinetId);
       });
   }, []);
