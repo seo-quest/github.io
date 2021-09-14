@@ -1,11 +1,5 @@
-import React, { useState } from "react";
-import {
-  Button,
-  FormControlLabel,
-  Radio,
-  RadioGroup,
-  TextField,
-} from "@material-ui/core";
+import React from "react";
+import { Button, TextField } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
 const QUEST_ANSWER = "수원역 파리바게뜨";
@@ -14,7 +8,7 @@ function Question_01() {
   const history = useHistory();
   const [value, setValue] = React.useState("");
 
-  const handleConfirm = (e) => {
+  const handleConfirm = () => {
     console.dir(value);
     if (value === QUEST_ANSWER) {
       history.push("/Mission/02");

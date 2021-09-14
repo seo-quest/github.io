@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 function Mission_03() {
-  //const history = useHistory();
+  const history = useHistory();
   const handleNext = () => {
-    //history.push("/Question/03");
-    alert("next");
+    history.push("/Mission/05");
   };
 
   return (
