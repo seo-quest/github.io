@@ -15,11 +15,13 @@ function Mission_05() {
       <div className="mission-text">
         수플레 팬케이크가 제일 맛있었던 가게가 있는 역으로 가주세요.
       </div>
-      <h2 className="hint-title">TIP</h2>
       <ul className="todo-list">
-        <li>> 이동할 때 기차를 이용하면 좀 더 편할거에요</li>
-        <li>> 기차표를 예약해 두었어요.(3호차 45번)</li>
+        <li>> 이동할 때 기차를 이용하면 좀 더 편할거에요.</li>
+        <li>> 기차표를 예약해 두었어요.</li>
       </ul>
+      <div className="image-container">
+        <img className="image" src="/ticket.jpg" alt="버스정류장" />
+      </div>
       <h2 className="hint-title">HINT</h2>
       <div className="hint-content">- 샤로수</div>
       <div className="button-container">
