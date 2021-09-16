@@ -16,7 +16,7 @@ function Mission_01() {
       <ul className="todo-list">
         <li>> 옷은 가볍게!</li>
         <li>> 메이크업은 빡세게!</li>
-        <li>> 출발 시간은 15:00</li>
+        <li>> 출발 시간은 14:30</li>
       </ul>
       <div className="button-container">
         <Button variant="contained" color="primary" onClick={handleStart}>

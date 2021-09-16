@@ -2,14 +2,14 @@ import React from "react";
 import { Button, TextField } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-const QUEST_ANSWER = "파리바게뜨";
+const QUEST_ANSWER_LIST = ["파리바게뜨", "파리바게트"];
 
 function Question_01() {
   const history = useHistory();
   const [value, setValue] = React.useState("");
 
   const handleConfirm = () => {
-    if (value === QUEST_ANSWER) {
+    if (QUEST_ANSWER_LIST.includes(value)) {
       history.push("/Mission/02");
     } else {
       history.push("/result/wrong/01");

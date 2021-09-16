@@ -20,7 +20,7 @@ function Mission_04() {
           단, 시간은
           <span style={{ color: "red" }}>
             <TimerIcon style={{ verticalAlign: "top" }} />
-            16:30
+            16:15
           </span>
           까지
         </span>
