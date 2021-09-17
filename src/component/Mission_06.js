@@ -25,14 +25,14 @@ function Mission_06() {
     <div className="mission">
       <h1 className="mission-title">미션 :</h1>
       <h2 className="mission-description">
-        물품 보관함 번호는 {lockerId}입니다.
+        사진 속 오른쪽 가게에서 편지를 받아주세요.
       </h2>
-      <div className="mission-text">
-        이전 문제의 정답을 비밀번호로 보관함을 열어보세요!
+      <div className="image-container">
+        <img className="image" src="/seoul_university.jpg" alt="물품보관함" />
       </div>
       <div className="button-container">
         <Button variant="contained" color="primary" onClick={handleNext}>
-          보관함을 열었습니다!
+          편지를 받았습니다!
         </Button>
       </div>
     </div>
