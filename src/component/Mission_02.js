@@ -31,7 +31,7 @@ function Mission_02() {
         해당 백화점 2층 물품 보관함으로 가주세요. ({lockerId})
       </div>
       <div className="image-container">
-        <img className="image" src="/cabinet_sample.png" alt="물품보관함" />
+        <img className="image" src="/lotte_cabinet.png" alt="물품보관함" />
       </div>
       <div className="button-container">
         <Button variant="contained" color="primary" onClick={handleNext}>

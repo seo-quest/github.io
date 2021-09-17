@@ -31,6 +31,10 @@ function Question_05() {
         <br /> 단연 으뜸인 인형으로 가서 쪽지를 확인 하고.
         <br /> 쪽지에 적힌 단어를 입력 해 주세요.
       </div>
+      <h2 className="hint-title">Warning, 쪽지를 찾을 수 없나요?</h2>
+      <div className="hint-content">
+        - 인형의 사진을 찍어서 저에게 보내주세요.
+      </div>
       <div className="text-input-container">
         <TextField
           className="answer-input"
